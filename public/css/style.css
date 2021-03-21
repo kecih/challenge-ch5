@@ -1,0 +1,342 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Verdana;
+}
+
+/* Navbar Styles */
+.container-navbar {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.custom-navbar {
+    background: rgba(0, 0, 0, 0.4) !important;
+    padding: 1em;
+}
+
+.custom-navbar-brand {
+    color: #fff !important;
+}
+
+
+.list-navbar-right li a {
+    color: #fff !important;
+}
+
+.custom-navbar-brand {
+    color: #fff !important;
+}
+
+.list-navbar-left li a {
+    margin-right: 0.5em !important;
+    color: #fff !important;
+}
+
+/* End of Navbar Styles */
+
+/* Jumbotron Banner Styles */
+.banner {
+    background-image: url('../assets/main-bg.jpg');
+    border-radius: 0;
+    height: 79em;
+    background-size: cover;
+    background-position: center;
+}
+
+.btn-play {
+    border-radius: 0;
+    width: 12em;
+}
+
+/* End of Jumbotron Banner Styles */
+
+
+/* Special Games Style */
+.special-games {
+    background-image: url('../assets/the-games-bg.png');
+    margin-top: -2em;
+    height: 80em;
+    background-size: cover;
+}
+
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    list-style-type: circle !important;
+}
+
+/* End of Special Games Style */
+
+/* Features Style */
+.features {
+    background-image: url('../assets/features.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80em;
+}
+
+.features-title {
+    margin-top: 15em;
+}
+
+.timeline {
+    list-style-type: none;
+    position: relative;
+}
+
+.timeline:before {
+    content: ' ';
+    background: #d4d9df;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 70%;
+    z-index: 400;
+}
+
+.timeline>li {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+.timeline li a {
+    color: #f9ba4d;
+}
+
+.timeline>li:before {
+    content: '';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+}
+
+/* End of Features Style */
+
+/* Requirements Style */
+.requirements {
+    background-image: url('../assets/requirements.png');
+    height: 80em;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.table-requirements tr td {
+    padding: 1em;
+    border: 1px solid rgba(53, 53, 53, 0.6);
+}
+
+.requirements-caption-title {
+    color: #f9ba4d;
+}
+
+.requirements-title {
+    margin-top: 5em;
+    margin-bottom: 2em;
+}
+
+/* End of Requirements Style */
+
+/* Top Scores Style */
+.top-scores {
+    background-image: url('../assets/top-score-bg2.png');
+    height: 90em;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.top-scores-title {
+    margin-top: 10em;
+}
+
+.card-margin-top {
+    margin-top: 25em;
+}
+
+.card-top-scores {
+    width: 28em;
+    background-color: #1e1f1f;
+}
+
+.top-score-name {
+    color: orange;
+}
+
+.top-score-profession {
+    color: #707d7f;
+}
+
+.top-score-date {
+    color: #707d7f;
+}
+
+/* End of Top Scores Style */
+
+/* Newsletter Style */
+.newsletter {
+    background-image: url('../assets/newsletter-bg.png');
+    height: 80em;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.email-input {
+    background-color: #070709;
+    color: white;
+    border: gray;
+}
+
+/* End of Newsletter Style */
+
+/* Footer Style */
+.page-footer {
+    background: black;
+}
+
+.footer-ref {
+    border-bottom: 1px solid gray;
+}
+
+.footer-ref a {
+    margin: 1em;
+    color: white;
+}
+
+.footer-links a {
+    margin: 1em;
+}
+
+.footer-links {
+    border-bottom: 1px solid gray;
+}
+
+.footer-border {
+    display: inline;
+    border-right: 1px solid gray;
+    margin-right: 1em;
+}
+
+.footer-border-2 {
+    display: inline;
+    margin-right: 1em;
+}
+
+.footer-foot {
+    color: gray;
+}
+
+/* End of Footer Style */
+
+/* Media Query */
+@media only screen and (min-width:320px) and (max-width: 768px) {
+    .list-navbar-left li a {
+        color: #fff !important;
+    }
+
+    .banner {
+        width: 65em;
+    }
+
+    .banner h1 {
+        margin-top: 7em;
+    }
+
+    .caption-story {
+        margin-top: 1em;
+    }
+
+    .special-games {
+        width: 65em;
+        margin-top: -3em
+    }
+
+    .title-special {
+        text-align: center;
+        margin-top: 3em;
+    }
+
+    .caption-special {
+        text-align: center;
+        margin-bottom: 1em;
+    }
+
+    .features {
+        width: 65em;
+        margin-top: -1em;
+    }
+
+    .requirements {
+        width: 65em;
+        margin-top: -1em;
+    }
+
+    .top-scores {
+        width: 65em;
+        margin-top: -1em;
+    }
+
+    .newsletter {
+        width: 65em;
+        margin-top: -1em;
+    }
+
+    .page-footer {
+        width: 65em;
+        margin-top: -1em;
+    }
+}
+
+@media only screen and (min-width:1024px) and (max-width:2560px) {
+    .custom-navbar-brand {
+        margin-left: 4em;
+    }
+
+    .list-navbar-left {
+        margin-left: 8em;
+    }
+
+    .list-navbar-left li a {
+        margin-right: 0.5em !important;
+    }
+
+    .banner h1 {
+        margin-top: 4em;
+    }
+
+    .caption-story {
+        margin-top: 38em;
+    }
+
+    .icon-story {
+        margin-top: -1em;
+    }
+
+    .title-special {
+        margin-top: 20em;
+    }
+
+    .carousel-special {
+        margin-top: 22em;
+    }
+
+    .top-score-testimony {
+        margin-left: -4em;
+        margin-top: 1em;
+    }
+
+    .top-score-date {
+        margin-left: -4em;
+    }
+}

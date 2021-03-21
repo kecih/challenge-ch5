@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #9C835F;
+}
+
+.header div .d-inline-block {
+    line-height: 2;
+}
+
+.header a .title {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffc107;
+}
+
+.background {
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    background-color: #9c835f;
+}
+
+.content {
+    position: relative;
+    top: 150px;
+    text-align: center !important;
+}
+
+.content .row div h3 {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.player.rock,
+.player.paper,
+.player.scissor {
+    cursor: pointer;
+}
+
+.compRock,
+.compPaper,
+.compScissor {
+    transform: scaleX(-1);
+}
+
+.content .row div.greyBox {
+    border-radius: 15%;
+}
+
+.content .refresh {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.content .row.contentImage .versus {
+    position: relative;
+    z-index: 1;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.content .row.contentImage .versus h1 {
+    font-weight: bold;
+    font-size: 60px;
+    color: #bd302f;
+}
+
+.content .row.contentImage .versus .result {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transform: rotate(-30deg);
+    margin-left: -30px;
+}
+
+.content .row.contentImage .versus .result h5 {
+    display: table-cell;
+    vertical-align: middle;
+    background-color: #4C9654;
+    border-radius: 5%;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #ffffff;
+    height: 100px;
+    padding: 10px 40px;
+}
