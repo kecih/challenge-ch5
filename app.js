@@ -22,7 +22,7 @@ app.get('/login', (req, res) => {
 app.post('/login', (req, res) => {
     const {username, password} = req.body
     // console.log(username + password)
-    if(username == user[0].username || password == user[0].password){
+    if(username == user[0].username && password == user[0].password){
         res.redirect('index')
     }else{
         res.redirect('login?notif=fail')
@@ -37,9 +37,6 @@ app.get('/game', (req, res) => {
     res.render('game')
 })
 
-app.get('/gagal', (req, res) => {
-    res.render('gagal')
-})
 app.listen(port, ()=> {
     console.log(`Listening at port ${port}`)
 })
