@@ -2,13 +2,13 @@
 <html lang="en">
 <%- include("partials/header.ejs") %>
 <body>
-    <% if(notif == 'fail') { %>
-        <%- include('partials/message.ejs') %>
-        <% } %>
     <div class="container-fluid">
         <div class="row form">
             <div class="col-12 col-sm-6 col-md-3">
                 <section class="form">
+                    <% if(notif == 'fail') { %>
+                        <%- include('partials/message.ejs') %>
+                        <% } %>
                     <h1 class="text-center mb-4 mt-4">Login</h1>
                     <form action="/login" method="POST">
                         <div class="form-group">
